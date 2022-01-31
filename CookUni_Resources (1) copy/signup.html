@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>CookUni</title>
+  </head>
+
+  <body>
+    <div
+      id="rooter"
+      class="cover-container w-100 d-flex h-100 p-3 mx-auto flex-column"
+    >
+      {{nav}}
+
+      <div id="notifications">
+        <div id="successBox" class="alert alert-success" role="alert">
+          {Success Message...}
+        </div>
+        <div id="loadingBox" class="alert alert-info" role="alert">
+          Loading...
+        </div>
+        <div id="errorBox" class="alert alert-danger" role="alert">
+          {Error Message...}
+        </div>
+      </div>
+
+      <form class="text-center p-5 form-layout" action="#" method="POST" id="signUp">
+        <p class="h4 mb-4">Sign up</p>
+
+        <div class="form-row mb-4">
+          <div class="col">
+            <input
+              type="text"
+              id="defaultRegisterFormFirstName"
+              class="form-control"
+              name="firstName"
+              placeholder="First name"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="defaultRegisterFormLastName"
+              class="form-control"
+              name="lastName"
+              placeholder="Last name"
+            />
+          </div>
+        </div>
+
+        <input
+          type="text"
+          id="defaultRegisterFormUsername"
+          class="form-control mb-4"
+          name="username"
+          placeholder="Username"
+        />
+        <input
+          type="password"
+          id="defaultRegisterFormPassword"
+          class="form-control"
+          name="password"
+          placeholder="Password"
+        />
+        <hr />
+        <input
+          type="password"
+          id="defaultRegisterRepeatPassword"
+          class="form-control"
+          name="repeatPassword"
+          placeholder="Repeat Password"
+        />
+        <button class="btn btn-danger my-4 btn-block w-25 m-auto" type="submit">
+          Sign up
+        </button>
+      </form>
+      {{footer}}
+    </div>
+  </body>
+
+  <!-- Libraries -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="./node_modules/sammy/lib/sammy.js"></script>
+  <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script src="./scripts/reciepeComponent.js"></script>
+  <script src="./scripts/navComponent.js"></script>
+  <script src="./scripts/footerComponent.js"></script>
+  <script src="./scripts/firebase.js"></script>
+  <script src="./scripts/init.js"></script>
+  <script src="./scripts/auth.js"></script>
+  <!--My Libraries-->
+  <!--????-->
+  <!--????-->
+  <!--????-->
+</html>
